@@ -1,0 +1,20 @@
+.new-activity {
+  padding: 100px;
+}
+
+.search-form {
+  display: inline-block;
+  text-align: center;
+	position: relative;
+}
+
+.search-full-width {
+  display: inline-block;
+  padding: 40px;
+  width: 100%;
+}
+
+input {
+  display: block;
+}
+

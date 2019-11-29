@@ -1,0 +1,33 @@
+<section class='signin-form'>
+    <form fxLayout='column' fxLayoutAlign='center center' fxLayoutGap='10px' #f='ngForm' (ngSubmit)='onSubmit(f)'>
+
+      <mat-form-field>
+        <input
+        type='email'
+        matInput
+        placeholder='Email Address'
+        ngModel
+        name='email'
+        email
+        required>
+        <mat-error>Email is invalid.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input
+        type='password'
+        matInput
+        placeholder='Password'
+        ngModel
+        name='password'
+        required
+        minlength='6'>
+      </mat-form-field>
+
+      <button
+        type='submit'
+        mat-raised-button
+        color='primary'
+        [disabled]='f.invalid'>Login</button>
+    </form>
+  </section>
